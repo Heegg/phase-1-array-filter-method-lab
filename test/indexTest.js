@@ -21,8 +21,10 @@ describe('index.js', function () {
       expect(findMatching(drivers, 'Susan')).to.eql([]);
     });
   });
+// --------------------------------------------------------------------------------
+  
 
-  describe('fuzzyMatch()', function () {
+describe('fuzzyMatch()', function () {
     const drivers = [];
 
     beforeEach(function () {
@@ -44,6 +46,8 @@ describe('index.js', function () {
     });
   });
 
+
+  
   describe('matchName()', function () {
     it('accesses the data structure to check if name matches', function () {
       const drivers = [
